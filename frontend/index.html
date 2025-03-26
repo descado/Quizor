@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test App</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="menu">
-                <div class="menu__element">Тесты</div>
-                <div class="menu__element">Создать тест</div>
-                <div class="menu__element">Мои результаты</div>
-                <div class="menu__element"></div>
-            </div>
-        </header>
-        <main class="content">
-            <div class="content__question">
-                <div class="content__question">
+    <header class="header">
+        <div class="header__logo">Test App</div>
+        <nav class="header__nav">
+            <button class="button button--primary">Создать тест</button>
+        </nav>
+    </header>
 
-                </div>
+    <main class="main">
+        <section class="test">
+            <div class="test__question card">
+                <h2 class="card__title">Вопрос 1</h2>
+                <p class="card__text">Какой язык программирования вы предпочитаете?</p>
+                <ul class="card__options">
+                    <li class="card__option">
+                        <input type="radio" name="question1" id="q1-option1">
+                        <label for="q1-option1">JavaScript</label>
+                    </li>
+                    <li class="card__option">
+                        <input type="radio" name="question1" id="q1-option2">
+                        <label for="q1-option2">Python</label>
+                    </li>
+                    <li class="card__option">
+                        <input type="radio" name="question1" id="q1-option3">
+                        <label for="q1-option3">Java</label>
+                    </li>
+                </ul>
             </div>
-        </main>
-        <footer class="footer">
-            <div>
-                <div>
-                    <div>© Батутво Егор Андреевич</div>
-                </div>
-                <div>
-                    <a>ТГ</a>
-                </div>
-                <div>
-                    <a>ТГК</a>
-                </div>
-                <div>
-                    <a>ВК</a>
-                </div>
-            </div>
-        </footer>
-    </div>
+            <button class="button button--secondary">Следующий вопрос</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2023 Test App</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>

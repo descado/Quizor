@@ -1,0 +1,25 @@
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+    margin-top: 0;
+}
+
+.card__text {
+    margin-bottom: 20px;
+}
+
+.card__options {
+    list-style: none;
+    padding: 0;
+}
+
+.card__option {
+    margin-bottom: 10px;
+}
